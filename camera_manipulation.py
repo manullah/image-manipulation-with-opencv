@@ -17,6 +17,9 @@ if not cap.isOpened():
     print("Error: Could not open camera.")
     exit()
 
+# Create a resizable window for displaying the video
+cv2.namedWindow("Fliped Video Capture", cv2.WINDOW_NORMAL)
+
 while True:
     # Read a frame from the camera
     ret, frame = cap.read()
